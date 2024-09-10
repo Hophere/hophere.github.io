@@ -1,16 +1,28 @@
-table {
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background: radial-gradient(circle,rgb(32, 31, 31), black);
+    display: grid;
+    place-items: center;
+}
+
+.circle{
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background: radial-gradient(circle at right bottom, purple 30%, blue 80%, white);
+    box-shadow: 10px 10px 30px;
+    display: grid;
+    place-items: center;
+}
+
+#glass {
+    height: 50%;
     width: 50%;
-    border: 1px solid black;
-    margin-left: 50%;
-}
-
-#in {
-    border-radius: 10px;
-    border-color: blue;
-    text-align: center;
-    background-color: aquamarine;
-}
-
-button {
-    cursor: crosshair;
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    position: relative;
 }
